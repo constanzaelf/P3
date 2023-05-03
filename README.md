@@ -14,6 +14,9 @@ Ejercicios básicos
   `get_pitch`.
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
+   <img width="764" alt="Captura de pantalla 2023-05-03 a las 9 11 44" src="https://user-images.githubusercontent.com/113508290/235852333-39cdb9da-c3e0-4107-8e64-4ef44faa15a9.png">
+
+   
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
@@ -24,8 +27,12 @@ Ejercicios básicos
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
+     <img width="578" alt="Captura de pantalla 2023-05-03 a las 9 13 34" src="https://user-images.githubusercontent.com/113508290/235852670-911330d4-3f93-43da-9a1b-a4cb8f653727.png">
+
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
+   <img width="703" alt="Captura de pantalla 2023-05-03 a las 9 14 09" src="https://user-images.githubusercontent.com/113508290/235852781-bac7cfe5-4e12-4fde-80f0-aa6b5bef396f.png">
+
 
    * Puede serle útil seguir las instrucciones contenidas en el documento adjunto `código.pdf`.
 
@@ -55,6 +62,9 @@ Ejercicios básicos
   * Optimice los parámetros de su sistema de estimación de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
 	`pitch_db/train`..
+	
+	<img width="438" alt="Captura de pantalla 2023-05-03 a las 9 17 27" src="https://user-images.githubusercontent.com/113508290/235853356-62054e9e-5526-46d5-b648-1b3a7c6f809c.png">
+
 
 Ejercicios de ampliación
 ------------------------
@@ -62,12 +72,16 @@ Ejercicios de ampliación
 - Usando la librería `docopt_cpp`, modifique el fichero `get_pitch.cpp` para incorporar los parámetros del
   estimador a los argumentos de la línea de comandos.
   
+  
   Esta técnica le resultará especialmente útil para optimizar los parámetros del estimador. Recuerde que
   una parte importante de la evaluación recaerá en el resultado obtenido en la estimación de pitch en la
   base de datos.
 
   * Inserte un *pantallazo* en el que se vea el mensaje de ayuda del programa y un ejemplo de utilización
     con los argumentos añadidos.
+    
+      <img width="896" alt="Captura de pantalla 2023-05-03 a las 9 18 25" src="https://user-images.githubusercontent.com/113508290/235853535-ec6eaecf-98b1-4fc6-909a-2b8835e59976.png">
+
 
 - Implemente las técnicas que considere oportunas para optimizar las prestaciones del sistema de estimación
   de pitch.
@@ -75,7 +89,15 @@ Ejercicios de ampliación
   Entre las posibles mejoras, puede escoger una o más de las siguientes:
 
   * Técnicas de preprocesado: filtrado paso bajo, diezmado, *center clipping*, etc.
+  
+  <img width="461" alt="Captura de pantalla 2023-05-03 a las 9 19 31" src="https://user-images.githubusercontent.com/113508290/235853697-ba17be9e-5b25-4333-855d-ed343b56fc3d.png">
+
+  
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
+  
+  <img width="502" alt="Captura de pantalla 2023-05-03 a las 9 20 08" src="https://user-images.githubusercontent.com/113508290/235853808-0075831f-3074-4223-91be-25cbe1af6259.png">
+
+  
   * Métodos alternativos a la autocorrelación: procesado cepstral, *average magnitude difference function*
     (AMDF), etc.
   * Optimización **demostrable** de los parámetros que gobiernan el estimador, en concreto, de los que
