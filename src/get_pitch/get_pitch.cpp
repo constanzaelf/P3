@@ -40,50 +40,6 @@ Arguments:
 )";
 
 
-vector<float> get_data(vector<float> x){
-  vector<float> data(3);
-  vector<float> r(x.size()/2);
-  for (unsigned int l = 0; l < r.size(); ++l) {
-      r[l] = 0;
-
-      for(unsigned int n=l; n<x.size(); n++){ // i n=0?
-        r[l] += x[n]*x[n-l];
-      }
-      r[l] /= x.size();
-  }
-  if (r[0] == 0.0F) //to avoid log() and divide zero 
-    r[0] = 1e-10; 
-  
-  int iRMax = 0;
-  float Rmax = 0;
-
-  for(int i=1; i<r.size(); i++){
-    if(r[i]>Rmax){ 
-      Rmax = r[i];
-      iRMax = i;
-    }
-  }
-
-  data[0]= 10*log10(r[0]);;
-  data[1]=r[1]/r[0];
-  data[2]=r[iRMax]/r[0];
-  FILE *autocorrela = fopen("autocorrela.txt", "w+");
-
-        for (unsigned int i = 0; i < x.size(); i++)
-        {
-        
-          fprintf(autocorrela, "%f \n", r[i]);
-        }
-
-        fclose(autocorrela);
-  return data; 
-}
-
-
-
-
-
-
 int main(int argc, const char *argv[]) {
 	/// \TODO 
 	///  Modify the program syntax and the call to **docopt()** in order to
