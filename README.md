@@ -27,6 +27,7 @@ Ejercicios básicos
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
+     
      <img width="578" alt="Captura de pantalla 2023-05-03 a las 9 13 34" src="https://user-images.githubusercontent.com/113508290/235852670-911330d4-3f93-43da-9a1b-a4cb8f653727.png">
 
 
@@ -46,6 +47,9 @@ Ejercicios básicos
 	    principales candidatos para determinar la sonoridad de la voz: el nivel de potencia de la señal
 		(r[0]), la autocorrelación normalizada de uno (r1norm = r[1] / r[0]) y el valor de la
 		autocorrelación en su máximo secundario (rmaxnorm = r[lag] / r[0]).
+		
+		![image](https://user-images.githubusercontent.com/113508290/236669627-8f3b48b1-81f9-475b-a2c9-d88c269d65ad.png)
+
 
 		Puede considerar, también, la conveniencia de usar la tasa de cruces por cero.
 
