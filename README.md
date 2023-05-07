@@ -92,7 +92,10 @@ Ejercicios de ampliación
   Entre las posibles mejoras, puede escoger una o más de las siguientes:
 
   * Técnicas de preprocesado: filtrado paso bajo, diezmado, *center clipping*, etc.
-  
+
+Con esta técnica recortamos la parte “central” de la señal  según el eje horizontal a partir de un umbral. Con esto pretendemos controlar los niveles máximos de la señal sin distorsionar completamente las partes más altas.
+Para definfir el umbral hemos ido probando hasta llegar a 0,0048.
+
   <img width="461" alt="Captura de pantalla 2023-05-03 a las 9 19 31" src="https://user-images.githubusercontent.com/113508290/235853697-ba17be9e-5b25-4333-855d-ed343b56fc3d.png">
 
   
