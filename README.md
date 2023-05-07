@@ -101,6 +101,8 @@ Para definfir el umbral hemos ido probando hasta llegar a 0,0048.
   
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
   
+Para poder corregir posibles valores “disparados” debido a errores de estimación hemos implementado un filtro de mediana de orden 3. Con este filtro al final lo que hacemos es comparar una muestra con sus vecinas para ver si el valor es coherente o no preservando los detalles de la señal.
+  
   <img width="502" alt="Captura de pantalla 2023-05-03 a las 9 20 08" src="https://user-images.githubusercontent.com/113508290/235853808-0075831f-3074-4223-91be-25cbe1af6259.png">
 
   
