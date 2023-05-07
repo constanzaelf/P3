@@ -55,6 +55,9 @@ Ejercicios básicos
       - Use el estimador de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
 		ilustrativa del resultado de ambos estimadores.
+		
+		<img width="1293" alt="image" src="https://user-images.githubusercontent.com/113508290/236668122-7a7d813a-07d3-46bc-9823-464042572e20.png">
+
      
 		Aunque puede usar el propio Wavesurfer para obtener la representación, se valorará
 	 	el uso de alternativas de mayor calidad (particularmente Python).
@@ -103,6 +106,8 @@ Ejercicios de ampliación
   * Optimización **demostrable** de los parámetros que gobiernan el estimador, en concreto, de los que
     gobiernan la decisión sonoro/sordo.
   * Cualquier otra técnica que se le pueda ocurrir o encuentre en la literatura.
+  * <img width="399" alt="Captura de pantalla 2023-05-07 a las 10 56 20" src="https://user-images.githubusercontent.com/113508290/236667917-1d1ab3bc-e361-4b5a-a8b0-fc9b9f42a051.png">
+
 
   Encontrará más información acerca de estas técnicas en las [Transparencias del Curso](https://atenea.upc.edu/pluginfile.php/2908770/mod_resource/content/3/2b_PS%20Techniques.pdf)
   y en [Spoken Language Processing](https://discovery.upc.edu/iii/encore/record/C__Rb1233593?lang=cat).
